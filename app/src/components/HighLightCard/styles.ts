@@ -11,7 +11,7 @@ interface TypeProps {
 export const Container = styled.View`
   width: ${RFValue(320)}px;
   height: ${RFValue(200)}px;
-  margin-right: 16px;
+  margin-right: 12px;
   border-top-right-radius: 40px;
   border-bottom-left-radius: 70px;
   justify-content: center;

@@ -16,7 +16,7 @@ export const Header = styled.View`
   align-items: flex-start;
   justify-content: center;
 
-  border-top-left-radius: 77px;
+  border-top-left-radius: 50px;
   border-bottom-right-radius: 90px;
   background-color: ${({ theme }) => theme.colors.primary};
 `;
@@ -68,12 +68,12 @@ export const Cards = styled.ScrollView.attrs({
 })`
   width: 100%;
   position: absolute;
-  margin-top: ${RFPercentage(22)}px;
+  margin-top: ${RFPercentage(20)}px;
 `;
 
 export const Search = styled.TextInput`
   margin: 80px auto -80px auto;
-  width: ${RFValue(350)}px;
+  width: ${RFValue(316)}px;
   height: ${RFValue(40)}px;
   border-radius: 250px;
   padding: 0 20px;
