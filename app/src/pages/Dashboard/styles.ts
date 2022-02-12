@@ -72,10 +72,12 @@ export const Cards = styled.ScrollView.attrs({
 `;
 
 export const Search = styled.TextInput`
-  margin-top: 100;
-  width: 250px;
-  height: 20px;
-  background-color: ${({ theme }) => theme.colors.secondary};
+  margin: 80px auto -80px auto;
+  width: ${RFValue(350)}px;
+  height: ${RFValue(40)}px;
+  border-radius: 250px;
+  padding: 0 20px;
+  background-color: ${({ theme }) => theme.colors.shape};
 `;
 
 export const Content = styled.ScrollView.attrs({

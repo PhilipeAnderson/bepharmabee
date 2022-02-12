@@ -9,6 +9,7 @@ import {
 
 interface CardsProps {
   title: String,
+  image?: String,
   type: 'ok' | 'nok'
 }
 
@@ -17,13 +18,13 @@ const icon = {
   nok: 'motorcycle'
 }
 
-export function HighLightCard({ title, type } : CardsProps){
+export function HighLightCard({ title, type, image } : CardsProps){
   return(
     <Container>
-      <Header>
-        <Title>{title}</Title>
-        <Icon name={icon[type]} type={type} />
-      </Header>
+        <Header>
+          <Title>{title}</Title>
+          <Icon name={icon[type]} type={type} />
+        </Header>
     </Container>
   )
 }

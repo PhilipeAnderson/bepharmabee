@@ -1,10 +1,12 @@
 import styled, { css } from 'styled-components/native';
 import { Fontisto } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
+import { ImageBackground } from 'react-native';
 
 interface TypeProps {
   type: 'ok' | 'nok'
 }
+
 
 export const Container = styled.View`
   width: ${RFValue(320)}px;
@@ -13,7 +15,7 @@ export const Container = styled.View`
   border-top-right-radius: 40px;
   border-bottom-left-radius: 70px;
   justify-content: center;
-  background-color: ${({ theme }) => theme.colors.backgroundLight};
+  background-color: ${({ theme }) => theme.colors.backgroundLight}
 `;
 
 export const Header = styled.View`
@@ -38,9 +40,4 @@ export const Icon = styled(Fontisto)<TypeProps>`
   ${({ type }) => type === 'nok' && css`
     color: ${({ theme }) => theme.colors.error}
   `};
-`;
-
-export const BackImage = styled.ImageBackground`
-  width: 200px;
-  height: 200px;
 `;
