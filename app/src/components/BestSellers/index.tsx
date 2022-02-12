@@ -1,5 +1,4 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 
 import { 
   Container, 
@@ -9,7 +8,9 @@ import {
   NameDrug,
   DescriptionDrug,
   MedicineValue,
-  Value
+  Value,
+  Cents,
+  Icon,
 } from './styles';
 
 export function BestSellers() {
@@ -24,8 +25,8 @@ export function BestSellers() {
           <DescriptionDrug>Combate a febre e enxaqueca!</DescriptionDrug>
         </MedicineInfo>
         <MedicineValue>
-          <Value>888</Value>
-          <Text>,99</Text>
+          <Value>89</Value>
+          <Cents>,99</Cents>
         </MedicineValue>
       </Content>
     </Container>

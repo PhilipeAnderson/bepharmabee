@@ -1,3 +1,4 @@
+import { Fontisto } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
@@ -18,12 +19,12 @@ export const Content = styled.View`
 
 export const MedicineImage = styled.Image`
   margin-top: 14px;
-  width: 70px;
+  width: 50px;
   height: 70px;
   `;
 
-export const MedicineInfo = styled.View`
-  width: 140px;
+export const MedicineInfo = styled.TouchableOpacity`
+  width: 40%;
   margin-top: 10px;
 `;
 
@@ -39,14 +40,18 @@ export const DescriptionDrug = styled.Text`
 export const MedicineValue = styled.Text`
   width: 30%;
   margin-top: 10px;
-  align-items: center;
-  justify-content: center;
-  
 `;
 
 export const Value = styled.Text`
   font-weight: bold;
   margin-top: 25px;
   font-size: ${RFValue(40)}px;
-  
+`;
+
+export const Cents = styled.Text`
+  font-size: ${RFValue(14)}px;
+`;
+
+export const Icon = styled(Fontisto)`
+  font-size: ${RFValue(24)}px;
 `;
