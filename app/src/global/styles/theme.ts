@@ -1,8 +1,8 @@
 
 export default {
   colors: {
-    primary: 'yellow',
-    secondary: 'black',
+    primary: '#f9ba2f',
+    secondary: '#474747',
     
     success: 'green',
     warning: 'orange',
@@ -10,8 +10,11 @@ export default {
 
     shape: 'white',
     title: '#363F5F',
-    text: '#969CB2',
+
+    textDark: '#363F5F',
+    textLight: '#969CB2',
     
-    background: '#F0F2F5'
+    backgroundDark: '#201f24',
+    backgroundLight: '#F0F2F5'
   }
 }
