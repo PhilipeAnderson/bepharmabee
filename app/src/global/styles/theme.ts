@@ -9,6 +9,7 @@ export default {
 
     shape: '#FFFFFF',
     title: '#363F5F',
+    value: '#d5ffd5',
 
     textDark: '#363F5F',
     textLight: '#969CB2',

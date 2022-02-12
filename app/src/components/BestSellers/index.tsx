@@ -1,16 +1,33 @@
 import React from 'react';
-import { Image, View, Text } from 'react-native';
+import { View, Text } from 'react-native';
 
-import { Container } from './styles';
+import { 
+  Container, 
+  Content,
+  MedicineImage,
+  MedicineInfo,
+  NameDrug,
+  DescriptionDrug,
+  MedicineValue,
+  Value
+} from './styles';
 
 export function BestSellers() {
   return (
     <Container>
-      <Image source={{ uri: 'https://uploads.consultaremedios.com.br/product_variation_images/large/bf07d49439d24c496eaa781063abe81183c1e682.png?1554403802'}}/>
-      <View>
-        <Text />
-        <Text />
-      </View>
+      <Content>
+        <MedicineImage 
+          source={require('../../assets/drugListShape.png')}
+        />
+        <MedicineInfo>
+          <NameDrug>Novalgina</NameDrug>
+          <DescriptionDrug>Combate a febre e enxaqueca!</DescriptionDrug>
+        </MedicineInfo>
+        <MedicineValue>
+          <Value>888</Value>
+          <Text>,99</Text>
+        </MedicineValue>
+      </Content>
     </Container>
   )
 }
