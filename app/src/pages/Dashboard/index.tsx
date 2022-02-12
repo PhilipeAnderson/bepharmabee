@@ -29,15 +29,12 @@ export function Dashboard(){
           <Icon name="power"/>
         </UserWrapper>
       </Header>
-      <Cards 
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{ paddingHorizontal: 14 }}
-      >
+      <Cards>
         <HighLightCard />
         <HighLightCard />
         <HighLightCard />
-
+        <HighLightCard />
+        <HighLightCard />
       </Cards>
 
 

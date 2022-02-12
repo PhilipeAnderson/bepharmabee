@@ -3,11 +3,11 @@ import { Fontisto } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
-  width: ${RFValue(300)}px;
+  width: ${RFValue(320)}px;
   height: ${RFValue(200)}px;
   margin-right: 16px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 70px;
   justify-content: center;
   background-color: ${({ theme }) => theme.colors.backgroundLight};
 `;
