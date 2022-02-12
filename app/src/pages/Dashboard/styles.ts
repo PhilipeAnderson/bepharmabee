@@ -68,6 +68,27 @@ export const Cards = styled.ScrollView.attrs({
 })`
   width: 100%;
   position: absolute;
-  margin-top: ${RFPercentage(20)}px;
+  margin-top: ${RFPercentage(22)}px;
+`;
+
+export const Search = styled.TextInput`
+  margin-top: 100;
+  width: 250px;
+  height: 20px;
+  background-color: ${({ theme }) => theme.colors.secondary};
+`;
+
+export const Content = styled.ScrollView.attrs({
+  showsHorizontalScrollIndicator: false,
+})`
+  width: 100%;
+  position: relative;
+  margin: 90px auto;
+  padding: 10px 10px;
+`;
+
+export const TitleBestSellers = styled.Text`
+  font-size: ${RFValue(16)}px;
+  color: ${({ theme }) => theme.colors.shape};
 `;
 

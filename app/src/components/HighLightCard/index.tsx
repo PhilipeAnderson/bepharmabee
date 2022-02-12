@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { 
   Container, 
   Header,
@@ -6,12 +7,22 @@ import {
   Icon
 } from './styles';
 
-export function HighLightCard(){
+interface CardsProps {
+  title: String,
+  type: 'ok' | 'nok'
+}
+
+const icon = {
+  ok: 'motorcycle',
+  nok: 'motorcycle'
+}
+
+export function HighLightCard({ title, type } : CardsProps){
   return(
     <Container>
       <Header>
-        <Title>Panvel</Title>
-        <Icon name="motorcycle" />
+        <Title>{title}</Title>
+        <Icon name={icon[type]} type={type} />
       </Header>
     </Container>
   )

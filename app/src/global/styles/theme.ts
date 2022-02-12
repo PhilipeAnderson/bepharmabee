@@ -1,4 +1,3 @@
-
 export default {
   colors: {
     primary: '#F9BA2F',
@@ -15,6 +14,7 @@ export default {
     textLight: '#969CB2',
     
     backgroundDark: '#201F24',
-    backgroundLight: '#F0F2F5'
+    backgroundLight: '#F0F2F5',
+    backgroundList: '#474747'
   }
 }
