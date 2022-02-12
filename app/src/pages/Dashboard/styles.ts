@@ -10,9 +10,9 @@ export const Container = styled.View`
 export const Header = styled.View`
   width: 100%;
   height: ${RFPercentage(42)}px;
-
-  background-color: ${({ theme}) => theme.colors.primary};
-
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 140px;
+  background-color: ${({ theme }) => theme.colors.primary};
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -54,6 +54,10 @@ export const UserName = styled.Text`
 
 export const Icon = styled(Feather)`
   font-size: ${RFValue(24)}px;
-  color: ${({ theme }) => theme.colors.secondary}
+  color: ${({ theme }) => theme.colors.textDark};   
+`;
+
+export const Cards = styled.ScrollView`
+
 `;
 

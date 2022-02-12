@@ -1,20 +1,20 @@
 
 export default {
   colors: {
-    primary: '#f9ba2f',
+    primary: '#F9BA2F',
     secondary: '#474747',
     
-    success: 'green',
-    warning: 'orange',
-    error: 'red',
+    success: '#6CD32C',
+    warning: '#FFA500',
+    error: '#FF0000',
 
-    shape: 'white',
+    shape: '#FFFFFF',
     title: '#363F5F',
 
     textDark: '#363F5F',
     textLight: '#969CB2',
     
-    backgroundDark: '#201f24',
+    backgroundDark: '#201F24',
     backgroundLight: '#F0F2F5'
   }
 }
