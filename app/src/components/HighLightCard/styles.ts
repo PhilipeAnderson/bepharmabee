@@ -13,6 +13,7 @@ export const Container = styled.View`
   border-bottom-left-radius: 70px;
   justify-content: center;
   overflow: hidden;
+  
   background-color: ${({ theme }) => theme.colors.backgroundLight};
 `;
 
