@@ -1,13 +1,13 @@
 import { Fontisto } from '@expo/vector-icons';
-import { RFValue } from 'react-native-responsive-fontsize';
+import { RFValue, RFPercentage } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
 export const Container = styled.ScrollView`
   width: 100%;
-  height: 90px;
+  height: ${RFValue(90)}px;
   border-top-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  margin-top: 10px;
+  margin-top: 7px;
   background-color: ${({ theme }) => theme.colors.backgroundLight};
 `;
 
@@ -35,6 +35,11 @@ export const NameDrug = styled.Text`
 
 export const DescriptionDrug = styled.Text`
   font-size: ${RFValue(12)}px;
+`;
+
+export const PharmacyName = styled.Text`
+  font-size: ${RFValue(14)}px;
+  font-weight: bold;
 `;
 
 export const MedicineValue = styled.Text`

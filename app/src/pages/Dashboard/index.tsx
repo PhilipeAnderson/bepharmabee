@@ -15,7 +15,8 @@ import {
   Cards,
   Search,
   Content,
-  TitleBestSellers
+  TitleBestSellers,
+  Adjust
  } from './styles';
 
 export function Dashboard(){
@@ -82,6 +83,7 @@ export function Dashboard(){
         <BestSellers />
         <BestSellers />
       </Content>
+      <Adjust/>
     </Container>
   )
 }

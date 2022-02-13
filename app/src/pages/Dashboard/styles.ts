@@ -16,7 +16,7 @@ export const Header = styled.View`
   align-items: flex-start;
   justify-content: center;
 
-  border-top-left-radius: 50px;
+  
   border-bottom-right-radius: 90px;
   background-color: ${({ theme }) => theme.colors.primary};
 `;
@@ -47,13 +47,13 @@ export const User = styled.View`
 
 export const UserGreeting = styled.Text`
   font-size: ${RFValue(12)}px;
-  color: ${({ theme }) => theme.colors.textDark}
+  color: ${({ theme }) => theme.colors.textDark};
 `;
 
 export const UserName = styled.Text`
   font-size: ${RFValue(16)}px;
   font-weight: bold;
-  color: ${({ theme }) => theme.colors.textDark}
+  color: ${({ theme }) => theme.colors.textDark};
 `;
 
 export const Icon = styled(Feather)`
@@ -84,7 +84,6 @@ export const Content = styled.ScrollView.attrs({
   showsHorizontalScrollIndicator: false,
 })`
   width: 100%;
-  position: relative;
   margin: 90px auto;
   padding: 10px 10px;
 `;
@@ -92,5 +91,9 @@ export const Content = styled.ScrollView.attrs({
 export const TitleBestSellers = styled.Text`
   font-size: ${RFValue(16)}px;
   color: ${({ theme }) => theme.colors.shape};
+`;
+
+export const Adjust = styled.Text`
+  margin: -50px auto;
 `;
 

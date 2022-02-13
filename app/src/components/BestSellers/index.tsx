@@ -7,10 +7,10 @@ import {
   MedicineInfo,
   NameDrug,
   DescriptionDrug,
+  PharmacyName,
   MedicineValue,
   Value,
-  Cents,
-  Icon,
+  Cents
 } from './styles';
 
 export function BestSellers() {
@@ -23,9 +23,10 @@ export function BestSellers() {
         <MedicineInfo>
           <NameDrug>Novalgina</NameDrug>
           <DescriptionDrug>Combate a febre e enxaqueca!</DescriptionDrug>
+          <PharmacyName>Nissei</PharmacyName>
         </MedicineInfo>
         <MedicineValue>
-          <Value>89</Value>
+          <Value>999</Value>
           <Cents>,99</Cents>
         </MedicineValue>
       </Content>

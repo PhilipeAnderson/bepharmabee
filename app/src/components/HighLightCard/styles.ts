@@ -13,14 +13,13 @@ export const Container = styled.View`
   border-bottom-left-radius: 70px;
   justify-content: center;
   overflow: hidden;
-  
+
   background-color: ${({ theme }) => theme.colors.backgroundLight};
 `;
 
 export const BackImage = styled.Image`
   width: 510px;
   height: 300px;
-
 `;
 
 export const Header = styled.View`
