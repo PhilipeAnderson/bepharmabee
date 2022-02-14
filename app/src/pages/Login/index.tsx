@@ -1,8 +1,8 @@
 import React from 'react';
 import { RFValue } from 'react-native-responsive-fontsize';
 
-//import AppleSvg from '../../assets/icon-apple.svg';
-//import GoogleSvg from '../../assets/icon-google.svg';
+import AppleSvg from '../../assets/icon-apple.svg';
+import GoogleSvg from '../../assets/icon-google.svg';
 
 import {
   Container,
