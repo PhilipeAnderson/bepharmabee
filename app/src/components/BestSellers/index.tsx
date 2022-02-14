@@ -20,7 +20,7 @@ export function BestSellers() {
         <MedicineImage 
           source={require('../../assets/drugListShape.png')}
         />
-        <MedicineInfo>
+        <MedicineInfo onPress={() => {}}>
           <NameDrug>Novalgina</NameDrug>
           <DescriptionDrug>Combate a febre e enxaqueca!</DescriptionDrug>
           <PharmacyName>Nissei</PharmacyName>
