@@ -37,13 +37,13 @@ export function AppRoutes() {
             name="home"
             size={size}
             color={color}
-              />
+            />
           )
         }}
       />
       <Screen 
         name="Especiais"
-        component={Login}
+        component={Dashboard}
         options={{
           tabBarIcon: (({ size, color }) => 
             <FontAwesome

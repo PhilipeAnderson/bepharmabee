@@ -1,39 +1,42 @@
-import React, { useState} from 'react';
-import { Text } from 'react-native';
+import React from 'react';
+import { RFValue } from 'react-native-responsive-fontsize';
+
+//import AppleSvg from '../../assets/icon-apple.svg';
+//import GoogleSvg from '../../assets/icon-google.svg';
+
 import {
   Container,
   Logo,
-  Content,
+  Header,
+  TitleWrapper,
   Title,
-  Register,
-  InputEmail,
-  InputPass,
-  SignIn
+  Span,
+  SignInTitle,
+  Footer
 } from './styles';
 
 export function Login() {
-
-  const [log, setLog] = useState({
-    email: '',
-    pass: ''
-  })
-
   return (
     <Container>
-      <Logo source={require('../../assets/beeLogo.png')} />
-      <Content>
-        <Title>Login</Title>
-        <Register>
-          <InputEmail 
-            
-                     
-          />
-          <InputPass />
-          <SignIn>
-            <Text>Entrar</Text>
-          </SignIn>
-        </Register>
-      </Content>
+      <Header>
+        <TitleWrapper>
+          <Logo source={require('../../assets/beeLogo.png')}/>
+          <Title>
+            A Farmácia{'\n'}
+            DENTRO do seu{'\n'}
+            <Span>Condomínio :)</Span> 
+
+          </Title>
+        </TitleWrapper>
+
+        <SignInTitle>
+          Login
+        </SignInTitle>
+      </Header>
+
+      <Footer>
+
+      </Footer>
     </Container>
   )
 };

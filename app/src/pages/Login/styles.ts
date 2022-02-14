@@ -1,11 +1,8 @@
-import { RFValue, RFPercentage } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
+import { RFValue, RFPercentage } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
   flex: 1;
-  background-color: ${({ theme }) => theme.colors.backgroundDark};
-  justify-content: center;
-  align-items: center;
 `;
 
 export const Logo = styled.Image`
@@ -13,34 +10,42 @@ export const Logo = styled.Image`
   height: ${RFValue(130)}px;
 `;
 
-export const Content = styled.View`
-  margin-top: ${RFValue(20)}px;
-  justify-content: center;
+export const Header = styled.View`
+  width: 100%;
+  height: 70%;
+  background-color: ${({ theme}) => theme.colors.backgroundDark};
+
+  justify-content: flex-end;
   align-items: center;
-  
+`;
+
+export const TitleWrapper = styled.View`
+  align-items: center;
 `;
 
 export const Title = styled.Text`
-  font-size: ${RFValue(20)}px;
   color: ${({ theme }) => theme.colors.shape};
+  font-size: ${RFValue(24)}px;
+  text-align: center;
+  margin-top: 45px;
 `;
 
-export const Register = styled.View`
-  width: ${RFPercentage(100)}px;
-  
-  
-  `;
-
-export const InputEmail = styled.TextInput`
-  
+export const Span = styled.Text`
+  font-size: ${RFValue(40)}px;
 `;
 
-export const InputPass = styled.TextInput`
-
+export const SignInTitle = styled.Text`
+  color: ${({ theme }) => theme.colors.shape};
+  font-size: ${RFValue(22)}px;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 70px;
 `;
 
-export const SignIn = styled.TouchableOpacity`
-  border: 1px solid #fff;
-  color: #fff;
-  background-color: ${({ theme }) => theme.colors.error};
+export const Footer = styled.View`
+  width: 100%;
+  height: 40%;
+  background-color: ${({ theme }) => theme.colors.primary};
 `;
+
+
