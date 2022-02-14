@@ -1,4 +1,4 @@
-import { RFValue } from 'react-native-responsive-fontsize';
+import { RFValue, RFPercentage } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
@@ -9,8 +9,8 @@ export const Container = styled.View`
 `;
 
 export const Logo = styled.Image`
-  width: 110px;
-  height: 130px;
+  width: ${RFValue(110)}px;
+  height: ${RFValue(130)}px;
 `;
 
 export const Content = styled.View`
@@ -26,11 +26,13 @@ export const Title = styled.Text`
 `;
 
 export const Register = styled.View`
-
-`;
+  width: ${RFPercentage(100)}px;
+  
+  
+  `;
 
 export const InputEmail = styled.TextInput`
-
+  
 `;
 
 export const InputPass = styled.TextInput`
@@ -38,5 +40,7 @@ export const InputPass = styled.TextInput`
 `;
 
 export const SignIn = styled.TouchableOpacity`
-
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: ${({ theme }) => theme.colors.error};
 `;

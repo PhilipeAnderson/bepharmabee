@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React, { useState} from 'react';
+import { Text } from 'react-native';
 import {
   Container,
   Logo,
@@ -12,15 +12,26 @@ import {
 } from './styles';
 
 export function Login() {
+
+  const [log, setLog] = useState({
+    email: '',
+    pass: ''
+  })
+
   return (
     <Container>
       <Logo source={require('../../assets/beeLogo.png')} />
       <Content>
         <Title>Login</Title>
         <Register>
-          <InputEmail />
+          <InputEmail 
+            
+                     
+          />
           <InputPass />
-          <SignIn />
+          <SignIn>
+            <Text>Entrar</Text>
+          </SignIn>
         </Register>
       </Content>
     </Container>
