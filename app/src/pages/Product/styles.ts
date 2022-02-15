@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import { RFValue, RFPercentage } from 'react-native-responsive-fontsize';
+import { Fontisto } from '@expo/vector-icons';
 
 export const Container = styled.View`
   flex: 1;
@@ -47,8 +48,41 @@ export const ValueProduct = styled.Text`
   margin-left: ${RFValue(200)}px;
 `;
 
+//Footer Cart
 export const Footer = styled.View`
   width: 100%;
   height: 30%;
   background-color: ${({ theme }) => theme.colors.backgroundDark};
 `;
+
+export const ValueCart = styled.View`
+  width: 100%;
+  padding: 5px 10px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+`;
+
+export const IconCart = styled(Fontisto)`
+  font-size: ${RFValue(48)}px;
+  color: ${({ theme }) => theme.colors.shape};
+  margin-top: ${RFValue(10)}px;
+  justify-content: flex-start;
+`;
+
+export const CartGet = styled.View`
+  width: ${RFPercentage(40)}px;
+  height: ${RFPercentage(20)}px;
+  margin-top: ${RFValue(10)}px; 
+  background-color: ${({ theme }) => theme.colors.error};
+`;
+
+export const AddCart = styled.View`
+
+`;
+
+export const PurchaseValue = styled.View`
+
+`;
+
+

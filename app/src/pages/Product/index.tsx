@@ -8,7 +8,13 @@ import {
   SubTitleProduct,
   DescriptionProduct,
   ValueProduct,
-  Footer
+  Footer,
+  ValueCart,
+  IconCart,
+  CartGet,
+  AddCart,
+  PurchaseValue,
+
 } from './styles';
 
 export function Product() {
@@ -31,14 +37,16 @@ export function Product() {
         </InfoProduct>
       </Header>
       <Footer>
-        {/* <ValueCart>
-          <Cart />
+        <ValueCart>
           <CartGet>
-            <AddCart />
+            <AddCart>
+              
+            </AddCart>
             <PurchaseValue></PurchaseValue>
           </CartGet>
+          <IconCart name="opencart"/>
         </ValueCart>
-        <ConfirmCartOrBuy>
+        {/* <ConfirmCartOrBuy>
           <ConfirmCart></ConfirmCart>
           <ConfirmBuy></ConfirmBuy>
         </ConfirmCartOrBuy> */}
