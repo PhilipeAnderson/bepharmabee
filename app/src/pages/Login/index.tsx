@@ -24,7 +24,7 @@ import {
 export function Login() {
 
   const { user } = useAuth();
-  console.log(user.email);
+  //console.log(user.email);
 
   return (
     <Container>
