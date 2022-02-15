@@ -1,8 +1,9 @@
 import React from 'react';
-import { RFValue } from 'react-native-responsive-fontsize';
 
 import AppleSvg from '../../assets/icon-apple.svg';
 import GoogleSvg from '../../assets/icon-google.svg';
+
+import { SignInSocialButton } from '../../components/SignInSocialButton';
 
 import {
   Container,
@@ -12,7 +13,9 @@ import {
   Title,
   Span,
   SignInTitle,
-  Footer
+  Footer,
+  FooterWrapper,
+  CopyRight
 } from './styles';
 
 export function Login() {
@@ -35,8 +38,19 @@ export function Login() {
       </Header>
 
       <Footer>
-
+        <FooterWrapper>
+          <SignInSocialButton 
+            title="Entrar com o Google"
+            svg={GoogleSvg}
+          />
+          <SignInSocialButton 
+            title="Entrar com a Apple"
+            svg={AppleSvg}
+          />
+        </FooterWrapper>
+        <CopyRight>
+          *Todos os direitos reservados: BePharmaBee*
+        </CopyRight>
       </Footer>
     </Container>
-  )
-};
+)};

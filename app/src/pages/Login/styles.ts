@@ -27,7 +27,7 @@ export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.shape};
   font-size: ${RFValue(24)}px;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 60px;
 `;
 
 export const Span = styled.Text`
@@ -38,8 +38,8 @@ export const SignInTitle = styled.Text`
   color: ${({ theme }) => theme.colors.shape};
   font-size: ${RFValue(22)}px;
   text-align: center;
-  margin-top: 45px;
-  margin-bottom: 70px;
+  margin-top:60px;
+  margin-bottom: 10px;
 `;
 
 export const Footer = styled.View`
@@ -47,5 +47,18 @@ export const Footer = styled.View`
   height: 40%;
   background-color: ${({ theme }) => theme.colors.primary};
 `;
+
+export const FooterWrapper = styled.View`
+  margin-top: ${RFPercentage(5)}px;
+  padding: 0 32px;
+  justify-content: space-between;
+`;
+
+export const CopyRight = styled.Text`
+  font-size: 14px;
+  text-align: center;
+  margin-top: 35px;
+`;
+
 
 
