@@ -15,7 +15,7 @@ export const Header = styled.View`
   `;
 
 export const ImageProduct = styled.Image`
-  width: ${RFValue(400)}px;
+  width: ${RFPercentage(55)}px;
   height: ${RFValue(250)}px;
   margin-top: ${RFValue(40)}px;
 `;
@@ -38,11 +38,11 @@ export const SubTitleProduct = styled.Text`
 `;
 
 export const DescriptionProduct = styled.Text`
-  font-size: ${RFValue(18)}px;
+  font-size: ${RFPercentage(2)}px;
 `;
 
 export const ValueProduct = styled.Text`
-  font-size: ${RFValue(40)}px;
+  font-size: ${RFValue(36)}px;
   font-weight: bold;
   margin-top: ${RFValue(10)}px;
   justify-content: space-around;
@@ -124,7 +124,7 @@ export const TextButtonPlus = styled.Text`
 export const PurchaseValue = styled.Text`
   width: 100%;
   padding: 0 10px;
-  font-size: ${RFValue(44)}px;
+  font-size: ${RFPercentage(5)}px;
   font-weight: bold;
   margin-top: ${RFValue(10)}px;
   color: ${({ theme }) => theme.colors.shape};
@@ -132,11 +132,12 @@ export const PurchaseValue = styled.Text`
 
 export const ConfirmCartOrBuy = styled.View`
   width: 100%;
-  margin-top: ${RFPercentage(4)}px;
+  margin-top: 20px;
+  padding: 10px;
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  background-color: ${({ theme }) => theme.colors.shape};
+  background-color: ${({ theme }) => theme.colors.backgroundDark};
 `;
 
 export const CancelCart = styled.TouchableOpacity`
@@ -148,8 +149,9 @@ export const CancelCart = styled.TouchableOpacity`
 export const TitleCancelCart = styled.Text`
   text-align: center;
   font-weight: bold;
+  padding: 2px 2px;
   font-size:${RFValue(20)}px;
-  margin-top: ${RFPercentage(1)}px;
+  margin-top: 2px;
   color: ${({ theme }) => theme.colors.shape};
 `;
 
@@ -162,7 +164,8 @@ export const ConfirmBuy = styled.TouchableOpacity`
 export const TitleConfirmBuy = styled.Text`
   text-align: center;
   font-weight: bold;
+  padding: 2px 2px;
   font-size:${RFValue(20)}px;
-  margin-top: ${RFPercentage(1)}px;
+  margin-top: 2px;
   color: ${({ theme }) => theme.colors.shape};
 `;
