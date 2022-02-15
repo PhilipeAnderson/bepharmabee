@@ -26,6 +26,7 @@ Até o momento foram criadas as primeiras linhas de código referente ao constru
         <th>Splash</th>
         <th>Login</th>
         <th>Home</th>
+        <th>Product</th>
       </tr>
     </thead>
     <tbody>
@@ -33,6 +34,7 @@ Até o momento foram criadas as primeiras linhas de código referente ao constru
         <td align="center"><img width="220" src="assets/screenshotSplash.jpeg" alt="Tela de Splash do App" /></td>
         <td align="center"><img width="220" src="assets/screenshotLogin.jpeg" alt="Tela de Login do App" /></td>
         <td align="center"><img width="220" src="assets/screenshotReadMe.jpeg" alt="Tela Home do App" /></td>
+        <td align="center"><img width="220" src="assets/screenshotProduct.jpeg" alt="Tela de Produto do App" /></td>
       </tr>
     </tbody>
 </table>
