@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import AppleSvg from '../../assets/icon-apple.svg';
 import GoogleSvg from '../../assets/icon-google.svg';
 
+import { useAuth } from '../../hooks/auth';
+
 import { SignInSocialButton } from '../../components/SignInSocialButton';
+
 
 import {
   Container,
@@ -19,6 +22,10 @@ import {
 } from './styles';
 
 export function Login() {
+
+  const { user } = useAuth();
+  console.log(user.email);
+
   return (
     <Container>
       <Header>
