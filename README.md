@@ -18,12 +18,24 @@ Esta é uma solução focada em menores preços, farmácias mais próximas e ben
 * Servidor (Node Js)
 * Hospedagem (AWS)
 
-​	Até o momento foram criadas as primeiras linhas de código referente ao construção do App para Android e IOS.
-
-<div align="center">
-  <img src="assets/screenshotLogin.jpeg" width="300"/>
-  <img src="assets/screenshotReadMe.jpeg" width="300"/>
-</div>
+Até o momento foram criadas as primeiras linhas de código referente ao construção do App para Android e IOS.
+<br />
+<table align="center" border="1">
+    <thead>
+    	<tr>
+        <th>Splash</th>
+        <th>Login</th>
+        <th>Home</th>
+      </tr>
+    </thead>
+    <tbody>
+    	<tr>
+        <td align="center"><img width="220" src="assets/screenshotSplash.jpeg" alt="Tela de Splash do App" /></td>
+        <td align="center"><img width="220" src="assets/screenshotLogin.jpeg" alt="Tela de Login do App" /></td>
+        <td align="center"><img width="220" src="assets/screenshotReadMe.jpeg" alt="Tela Home do App" /></td>
+      </tr>
+    </tbody>
+</table>
 
 
 
