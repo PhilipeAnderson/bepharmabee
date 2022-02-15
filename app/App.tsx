@@ -6,12 +6,14 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import { AppRoutes } from './src/routes/app.routes';
 import { Login } from './src/pages/Login';
+import { Splash } from './src/pages/Splash';
 
 export default function App() {
   
   return (
     <ThemeProvider theme={ theme }>
-      <Login />
+      {/* <Login /> */}
+      <Splash />
       {/* <NavigationContainer>
         <AppRoutes />
       </NavigationContainer> */}
