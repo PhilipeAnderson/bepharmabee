@@ -21,7 +21,7 @@ Esta é uma solução focada em menores preços, farmácias mais próximas e ben
 ​	Até o momento foram criadas as primeiras linhas de código referente ao construção do App para Android e IOS.
 
 <div align="center">
-  <img src="assets/scrrenshotLogin.png" width="300"/>
+  <img src="assets/screenshotLogin.jpeg" width="300"/>
   <img src="assets/screenshotReadMe.jpeg" width="300"/>
 </div>
 
