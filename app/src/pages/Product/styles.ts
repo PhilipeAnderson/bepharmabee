@@ -65,15 +65,12 @@ export const ValueCart = styled.View`
 `;
 
 export const IconCart = styled(Fontisto)`
-  font-size: ${RFValue(48)}px;
+  font-size: ${RFValue(60)}px;
+  margin-right: ${RFValue(25)}px;
   color: ${({ theme }) => theme.colors.shape};
-  margin-top: ${RFValue(10)}px;
-  justify-content: flex-start;
 `;
 
 export const CartGet = styled.View`
-  width: ${RFPercentage(40)}px;
-  height: ${RFPercentage(20)}px;
   margin-top: ${RFValue(10)}px; 
 `;
 
@@ -133,4 +130,39 @@ export const PurchaseValue = styled.Text`
   color: ${({ theme }) => theme.colors.shape};
 `;
 
+export const ConfirmCartOrBuy = styled.View`
+  width: 100%;
+  margin-top: ${RFPercentage(4)}px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: ${({ theme }) => theme.colors.shape};
+`;
 
+export const CancelCart = styled.TouchableOpacity`
+  width: 50%;
+  height: 40px;
+  background-color: ${({ theme }) => theme.colors.error};
+`;
+
+export const TitleCancelCart = styled.Text`
+  text-align: center;
+  font-weight: bold;
+  font-size:${RFValue(20)}px;
+  margin-top: ${RFPercentage(1)}px;
+  color: ${({ theme }) => theme.colors.shape};
+`;
+
+export const ConfirmBuy = styled.TouchableOpacity`
+  width: 50%;
+  height: 40px;
+  background-color: ${({ theme }) => theme.colors.success};
+`;
+
+export const TitleConfirmBuy = styled.Text`
+  text-align: center;
+  font-weight: bold;
+  font-size:${RFValue(20)}px;
+  margin-top: ${RFPercentage(1)}px;
+  color: ${({ theme }) => theme.colors.shape};
+`;

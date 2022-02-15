@@ -1,4 +1,4 @@
-import React, { useState} from  'react';
+import React, { useState, useEffect } from  'react';
 import { Text } from 'react-native';
 
 import {
@@ -21,12 +21,23 @@ import {
   ButtonPlus,
   TextButtonPlus,
   PurchaseValue,
-
+  ConfirmCartOrBuy,
+  CancelCart,
+  TitleCancelCart,
+  ConfirmBuy,
+  TitleConfirmBuy
 } from './styles';
+
+const valueProduct = 24.99
 
 export function Product() {
 
-  const [ quantityAddCart, setQuantityAddCart ] = useState(1)
+  const [ quantityAddCart, setQuantityAddCart ] = useState(1);
+  const [ uniqueValueProduct, setUniqueValueProduct ] = useState(valueProduct)
+
+  useEffect(() => {
+    setUniqueValueProduct(quantityAddCart * valueProduct)
+  },[quantityAddCart])
 
   return(
     <Container>
@@ -36,7 +47,7 @@ export function Product() {
           <TitleProduct>Cataflam 50mg</TitleProduct>
           <SubTitleProduct>Diclofenaco de Potássico</SubTitleProduct>
           <DescriptionProduct>
-          Para que serve? Cataflam é indicado para o 
+          Cataflam é indicado para o 
           tratamento de curto prazo, das seguintes 
           condições: Entorses, distensões e outras 
           lesões; Dor e inflamação no pós-operatório; 
@@ -44,7 +55,7 @@ export function Product() {
           Continuar lendo bula
           </DescriptionProduct>
           <ValueProduct>
-            R$:19,80
+            R$:{ valueProduct.toFixed(2) }
           </ValueProduct>
         </InfoProduct>
       </Header>
@@ -78,16 +89,21 @@ export function Product() {
                 </TextButtonPlus>
               </ButtonPlus>
             </AddCart>
-            <PurchaseValue>
-              R$:19,80
+            <PurchaseValue >
+              R$:{uniqueValueProduct.toFixed(2)}
             </PurchaseValue>
           </CartGet>
           <IconCart name="opencart"/>
         </ValueCart>
-        {/* <ConfirmCartOrBuy>
-          <ConfirmCart></ConfirmCart>
-          <ConfirmBuy></ConfirmBuy>
-        </ConfirmCartOrBuy> */}
+        <ConfirmCartOrBuy>
+          <CancelCart>
+            <TitleCancelCart>Cancelar</TitleCancelCart>
+          </CancelCart>
+          <ConfirmBuy>
+            <TitleConfirmBuy>Comprar</TitleConfirmBuy>
+          </ConfirmBuy>
+        </ConfirmCartOrBuy>
+        
       </Footer>
     </Container>
   )
