@@ -45,7 +45,9 @@ export const ValueProduct = styled.Text`
   font-size: ${RFValue(40)}px;
   font-weight: bold;
   margin-top: ${RFValue(10)}px;
-  margin-left: ${RFValue(200)}px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 `;
 
 //Footer Cart
@@ -57,10 +59,9 @@ export const Footer = styled.View`
 
 export const ValueCart = styled.View`
   width: 100%;
-  padding: 5px 10px;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 `;
 
 export const IconCart = styled(Fontisto)`
@@ -74,15 +75,62 @@ export const CartGet = styled.View`
   width: ${RFPercentage(40)}px;
   height: ${RFPercentage(20)}px;
   margin-top: ${RFValue(10)}px; 
-  background-color: ${({ theme }) => theme.colors.error};
 `;
 
 export const AddCart = styled.View`
-
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
 `;
 
-export const PurchaseValue = styled.View`
+export const ButtonMinus = styled.TouchableOpacity`
+  width: 20%;
+  height: 100%;
+  margin-top: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: ${({ theme }) => theme.colors.shape};
+`;
 
+export const TextButtonMinus = styled.Text`
+  font-size: ${RFValue(20)}px;
+`;
+
+export const Quantity = styled.Text`
+  width: 30%;
+  margin-top: 10px;
+  text-align: center;
+  font-size: ${RFValue(20)}px;
+  color: ${({ theme }) => theme.colors.shape};
+`;
+
+export const ButtonPlus = styled.TouchableOpacity`
+  width: 20%;
+  height: 100%;
+  margin-top: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: ${({ theme }) => theme.colors.shape};
+`;
+
+export const TextButtonPlus = styled.Text`
+  font-size: ${RFValue(20)}px;
+`;
+
+export const PurchaseValue = styled.Text`
+  width: 100%;
+  padding: 0 10px;
+  font-size: ${RFValue(44)}px;
+  font-weight: bold;
+  margin-top: ${RFValue(10)}px;
+  color: ${({ theme }) => theme.colors.shape};
 `;
 
 
