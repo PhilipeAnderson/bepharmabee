@@ -44,6 +44,7 @@ export const ValueProduct = styled.Text`
   font-size: ${RFValue(40)}px;
   font-weight: bold;
   margin-top: ${RFValue(10)}px;
+  margin-left: ${RFValue(200)}px;
 `;
 
 export const Footer = styled.View`
