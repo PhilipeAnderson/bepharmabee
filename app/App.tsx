@@ -19,7 +19,7 @@ export default function App() {
 
       <NavigationContainer>
         <AuthProvider>
-          <Product />
+          <Login />
         </AuthProvider>
       </NavigationContainer>
     </ThemeProvider>

@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+import React from 'react';
+import { Alert } from 'react-native';
 
 import AppleSvg from '../../assets/icon-apple.svg';
 import GoogleSvg from '../../assets/icon-google.svg';
@@ -23,8 +24,16 @@ import {
 
 export function Login() {
 
-  const { user } = useAuth();
-  //console.log(user.email);
+  const { signInWithGoogle } = useAuth();
+
+  async function handleSignInWithGoogle(){
+    try {
+      await signInWithGoogle();
+    } catch (error) {
+      console.log(error)
+      Alert.alert('Não foi possível a conectar a conta Google')
+    }
+  }
 
   return (
     <Container>
@@ -35,7 +44,6 @@ export function Login() {
             A Farmácia{'\n'}
             DENTRO do seu{'\n'}
             <Span>Condomínio :)</Span> 
-
           </Title>
         </TitleWrapper>
 
@@ -49,6 +57,7 @@ export function Login() {
           <SignInSocialButton 
             title="Entrar com o Google"
             svg={GoogleSvg}
+            onPress={handleSignInWithGoogle}
           />
           <SignInSocialButton 
             title="Entrar com a Apple"
