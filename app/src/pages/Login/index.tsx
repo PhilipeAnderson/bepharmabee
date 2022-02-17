@@ -69,4 +69,5 @@ export function Login() {
         </CopyRight>
       </Footer>
     </Container>
-)};
+  )
+}

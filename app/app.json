@@ -4,7 +4,7 @@
   "expo": {
     "name": "app",
     "slug": "app",
-    "schema": "bepharmabee",
+    "scheme": "bepharmabee",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
