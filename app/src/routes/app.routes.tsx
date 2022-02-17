@@ -3,18 +3,17 @@ import { Platform } from 'react-native';
 import { MaterialIcons, FontAwesome, Fontisto } from '@expo/vector-icons';
 import { useTheme } from 'styled-components';
 
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 const { Navigator, Screen } = createBottomTabNavigator();
 
-import { Dashboard } from '../pages/Dashboard';
 import { Login } from '../pages/Login';
+import { Dashboard } from '../pages/Dashboard';
+import { Product } from '../pages/Product';
 
 
 export function AppRoutes() {
-
   const theme = useTheme();
-
   return(
     <Navigator
       screenOptions={{
@@ -43,7 +42,7 @@ export function AppRoutes() {
       />
       <Screen 
         name="Especiais"
-        component={Dashboard}
+        component={Login}
         options={{
           tabBarIcon: (({ size, color }) => 
             <FontAwesome
@@ -56,7 +55,7 @@ export function AppRoutes() {
       />
       <Screen 
         name="Vacinas"
-        component={Dashboard}
+        component={Product}
         options={{
           tabBarIcon: (({ size, color }) => 
             <Fontisto

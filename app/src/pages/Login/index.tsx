@@ -57,11 +57,14 @@ export function Login() {
           <SignInSocialButton 
             title="Entrar com o Google"
             svg={GoogleSvg}
-            onPress={handleSignInWithGoogle}
+            //onPress={Home}
+            //onPress={handleSignInWithGoogle}
           />
           <SignInSocialButton 
             title="Entrar com a Apple"
             svg={AppleSvg}
+            //onPress={Home}
+            //onPress={handleSignInWithApple}
           />
         </FooterWrapper>
         <CopyRight>
@@ -70,4 +73,4 @@ export function Login() {
       </Footer>
     </Container>
   )
-}
+};
