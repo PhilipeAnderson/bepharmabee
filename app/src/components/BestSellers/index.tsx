@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { Routes } from '../../routes/routes';
+const routes = Routes();
+
 import { 
   Container, 
   Content,
@@ -20,7 +23,7 @@ export function BestSellers() {
         <MedicineImage 
           source={require('../../assets/drugListShape.png')}
         />
-        <MedicineInfo onPress={() => {}}>
+        <MedicineInfo>
           <NameDrug>Novalgina</NameDrug>
           <DescriptionDrug>Combate a febre e enxaqueca!</DescriptionDrug>
           <PharmacyName>Nissei</PharmacyName>

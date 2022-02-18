@@ -7,7 +7,7 @@ import { useTheme } from 'styled-components';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 const { Navigator, Screen } = createBottomTabNavigator();
 
-import { Login } from '../pages/Login';
+import { Specials } from '../pages/Specials'
 import { Dashboard } from '../pages/Dashboard';
 import { Product } from '../pages/Product';
 
@@ -42,7 +42,7 @@ export function AppRoutes() {
       />
       <Screen 
         name="Especiais"
-        component={Login}
+        component={Specials}
         options={{
           tabBarIcon: (({ size, color }) => 
             <FontAwesome

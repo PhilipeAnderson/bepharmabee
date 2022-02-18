@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { HighLightCard } from '../../components/HighLightCard';
 import { BestSellers } from '../../components/BestSellers';
 
