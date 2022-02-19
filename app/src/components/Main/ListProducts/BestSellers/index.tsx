@@ -1,8 +1,5 @@
 import React from 'react';
 
-import { Routes } from '../../routes/routes';
-const routes = Routes();
-
 import { 
   Container, 
   Content,
@@ -21,7 +18,7 @@ export function BestSellers() {
     <Container>
       <Content>
         <MedicineImage 
-          source={require('../../assets/drugListShape.png')}
+          source={require('../../../../assets/drugListShape.png')}
         />
         <MedicineInfo>
           <NameDrug>Novalgina</NameDrug>

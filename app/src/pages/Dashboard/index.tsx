@@ -3,13 +3,10 @@ import React from 'react';
 import { Header } from '../../components/Header';
 import { Cards } from '../../components/Cards';
 import { Search } from '../../components/Search';
-import { BestSellers } from '../../components/BestSellers';
+import { Main } from '../../components/Main'
 
 import { 
-  Container,
-  Content,
-  TitleBestSellers,
-  Adjust
+  Container
  } from './styles';
 
 export function Dashboard(){
@@ -18,15 +15,7 @@ export function Dashboard(){
       <Header />
       <Cards />
       <Search />
-      <Content>
-        <TitleBestSellers>Mais Vendidos</TitleBestSellers>
-        <BestSellers />
-        <BestSellers />
-        <BestSellers />
-        <BestSellers />
-        <BestSellers />
-      </Content>
-      <Adjust/>
+      <Main />
     </Container>
   )
 }

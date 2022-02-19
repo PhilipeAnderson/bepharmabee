@@ -2,11 +2,11 @@ import styled from 'styled-components/native';
 import { RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
-    flex: 1;
-    background-color: ${({ theme }) => theme.colors.backgroundDark};
+  flex: 1;
+  margin-top: 100px;
 `;
 
-export const Adjust = styled.View`
-  margin: -50px;
+export const TitleList = styled.Text`
+  font-size: ${RFValue(16)}px;
+  color: ${({ theme }) => theme.colors.shape};
 `;
-
