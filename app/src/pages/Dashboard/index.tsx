@@ -6,13 +6,6 @@ import { BestSellers } from '../../components/BestSellers';
 
 import { 
   Container,
-  UserInfo,
-  Photo,
-  User,
-  UserGreeting,
-  UserName,
-  LogoutButtom,
-  Icon,
   Cards,
   Search,
   Content,
@@ -23,18 +16,7 @@ import {
 export function Dashboard(){
   return (
     <Container>
-      <Header>
-        <UserInfo>
-          <Photo source={{ uri: 'https://avatars.githubusercontent.com/u/18056309?v=4' }}/>
-          <User>
-            <UserGreeting>Olá, </UserGreeting>
-            <UserName>Philipe</UserName>
-          </User>
-        </UserInfo>
-        <LogoutButtom onPress={() => {}}>
-          <Icon name="power"/>
-        </LogoutButtom>
-      </Header>
+      <Header />
       <Cards>
         <HighLightCard 
           title="Panvel" 

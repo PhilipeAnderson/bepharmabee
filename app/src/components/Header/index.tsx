@@ -1,18 +1,14 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { UserWrapper } from './UserWrapper';
 
-import { Container } from './styles';
+import { 
+  Container
+} from './styles';
 
-interface ChildrenProps{
-  children: ReactNode;
-}
-
-export function Header({ children }: ChildrenProps){
+export function Header(){
   return(
     <Container>
-      <UserWrapper>
-        { children }
-      </UserWrapper>
+      <UserWrapper />
     </Container>
   )
 };

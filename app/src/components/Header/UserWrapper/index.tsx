@@ -1,17 +1,16 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
+import { UserInfo } from './UserInfo';
+import { LogoutButton } from './LogoutButton';
 
 import {
   Container
 } from './styles';
 
-interface ChildrenProps{
-  children: ReactNode
-}
-
-export function UserWrapper({ children }: ChildrenProps) {
+export function UserWrapper() {
   return(
     <Container>
-      { children }
+      <UserInfo />
+      <LogoutButton />
     </Container>
   )
 };
