@@ -52,7 +52,6 @@ export function Product() {
           condições: Entorses, distensões e outras 
           lesões; Dor e inflamação no pós-operatório; 
           Condições inflamatórias… 
-          Continuar lendo bula
           </DescriptionProduct>
           <ValueProduct>
             R$:{ valueProduct.toFixed(2) }
