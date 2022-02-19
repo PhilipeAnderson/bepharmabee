@@ -9,8 +9,8 @@ import {
 } from './styles';
 
 interface CardsProps {
-  title: String,
-  image?: String,
+  title: string,
+  image: string,
   type: 'ok' | 'nok'
 }
 
@@ -26,7 +26,7 @@ export function HighLightCard({ title, type, image } : CardsProps){
           <Title>{title}</Title>
           <Icon name={icon[type]} type={type} />
         </Header>
-      <BackImage source={{uri: 'https://media.moneytimes.com.br/uploads/2020/09/panvel-farmacias-loja-casemiro-baixa-min.jpg'}} />
+      <BackImage source={{ uri: image }} />
     </Container>
   )
 }
