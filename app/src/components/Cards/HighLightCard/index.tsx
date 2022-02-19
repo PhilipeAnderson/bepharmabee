@@ -4,7 +4,7 @@ import {
   Container,
   BackImage,
   Header,
-  Title,
+  //Title,
   Icon
 } from './styles';
 
@@ -23,10 +23,10 @@ export function HighLightCard({ title, type, image } : CardsProps){
   return(
     <Container>
         <Header>
-          <Title>{title}</Title>
+          {/* <Title>{title}</Title> */}
           <Icon name={icon[type]} type={type} />
         </Header>
-      <BackImage source={{ uri: image }} />
+      <BackImage source={{uri: image }} />
     </Container>
   )
 }

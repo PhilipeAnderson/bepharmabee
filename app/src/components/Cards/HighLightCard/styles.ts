@@ -6,30 +6,26 @@ interface TypeProps {
 }
 
 export const Container = styled.View`
-  width: ${RFValue(320)}px;
-  height: ${RFValue(200)}px;
   margin-right: 12px;
   border-top-right-radius: 40px;
   border-bottom-left-radius: 70px;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   overflow: hidden;
-
-  background-color: ${({ theme }) => theme.colors.backgroundLight};
 `;
 
 export const BackImage = styled.Image`
-  width: 510px;
-  height: 300px;
+  width: ${RFValue(320)}px;
+  height: ${RFValue(200)}px;
 `;
 
 export const Header = styled.View`
   position: absolute;
-  padding: 0 25px;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: ${({ theme }) => theme.colors.shape};
+  margin-top: 20px;
+  padding: 5px 25px;
+  border-top-left-radius: 20px;
   z-index: 101;
+  background-color: ${({ theme }) => theme.colors.backgroundList};
 `;
 
 export const Title = styled.Text`
@@ -38,7 +34,7 @@ export const Title = styled.Text`
 `;
 
 export const Icon = styled(Fontisto)<TypeProps>`
-  font-size: ${RFValue(24)}px;
+  font-size: ${RFValue(36)}px;
 
   ${({ type }) => type === 'ok' && css`
     color: ${({ theme }) => theme.colors.success}
