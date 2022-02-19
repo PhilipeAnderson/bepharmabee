@@ -81,8 +81,4 @@ function useAuth() {
   return context;
 }
 
-interface FakeProps {
-  fake: boolean
-}  
-
 export { AuthProvider, useAuth }

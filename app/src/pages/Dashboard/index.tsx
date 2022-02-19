@@ -1,12 +1,11 @@
 import React from 'react';
 
+import { Header } from '../../components/Header';
 import { HighLightCard } from '../../components/HighLightCard';
 import { BestSellers } from '../../components/BestSellers';
 
 import { 
   Container,
-  Header,
-  UserWrapper,
   UserInfo,
   Photo,
   User,
@@ -25,18 +24,16 @@ export function Dashboard(){
   return (
     <Container>
       <Header>
-        <UserWrapper>
-          <UserInfo>
-            <Photo source={{ uri: 'https://avatars.githubusercontent.com/u/18056309?v=4' }}/>
-            <User>
-              <UserGreeting>Olá, </UserGreeting>
-              <UserName>Philipe</UserName>
-            </User>
-          </UserInfo>
-          <LogoutButtom onPress={() => {}}>
-            <Icon name="power"/>
-          </LogoutButtom>
-        </UserWrapper>
+        <UserInfo>
+          <Photo source={{ uri: 'https://avatars.githubusercontent.com/u/18056309?v=4' }}/>
+          <User>
+            <UserGreeting>Olá, </UserGreeting>
+            <UserName>Philipe</UserName>
+          </User>
+        </UserInfo>
+        <LogoutButtom onPress={() => {}}>
+          <Icon name="power"/>
+        </LogoutButtom>
       </Header>
       <Cards>
         <HighLightCard 
