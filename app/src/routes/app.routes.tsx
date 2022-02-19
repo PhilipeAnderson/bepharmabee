@@ -21,7 +21,7 @@ export function AppRoutes() {
         tabBarActiveTintColor: theme.colors.primary,
         tabBarInactiveTintColor: theme.colors.secondary,
         tabBarStyle: {
-          height: 60,
+          height: 50,
           paddingVertical: Platform.OS === 'ios' ? 20 : 10,
           backgroundColor: theme.colors.backgroundDark 
         }  

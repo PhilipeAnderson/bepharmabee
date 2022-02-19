@@ -22,7 +22,7 @@ export const MedicineImage = styled.Image`
 
 export const MedicineInfo = styled.TouchableOpacity`
   width: 40%;
-  margin-top: 10px;
+  margin-top: 3px;
 `;
 
 export const NameDrug = styled.Text`
