@@ -33,7 +33,7 @@ export function Login() {
       console.log(error)
       Alert.alert('Não foi possível a conectar a conta Google')
     }
-  }
+  };
 
   return (
     <Container>
@@ -58,7 +58,7 @@ export function Login() {
             title="Entrar com o Google"
             svg={GoogleSvg}
             //onPress={Home}
-            //onPress={handleSignInWithGoogle}
+            onPress={handleSignInWithGoogle}
           />
           <SignInSocialButton 
             title="Entrar com a Apple"

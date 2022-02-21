@@ -24,10 +24,10 @@ export const TitleWrapper = styled.View`
 `;
 
 export const Title = styled.Text`
-  color: ${({ theme }) => theme.colors.shape};
-  font-size: ${RFValue(24)}px;
-  text-align: center;
   margin-top: 60px;
+  text-align: center;
+  font-size: ${RFValue(24)}px;
+  color: ${({ theme }) => theme.colors.shape};
 `;
 
 export const Span = styled.Text`
@@ -35,11 +35,11 @@ export const Span = styled.Text`
 `;
 
 export const SignInTitle = styled.Text`
-  color: ${({ theme }) => theme.colors.shape};
-  font-size: ${RFValue(22)}px;
-  text-align: center;
   margin-top:60px;
+  text-align: center;
   margin-bottom: 10px;
+  font-size: ${RFValue(22)}px;
+  color: ${({ theme }) => theme.colors.shape};
 `;
 
 export const Footer = styled.View`

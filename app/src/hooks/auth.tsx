@@ -34,13 +34,13 @@ function AuthProvider({ children }: AuthProviderProps) {
   async function signInWithGoogle() {
     try {
       const CLIENT_ID = '718883823043-cjcc0vk0qbng0h5gvvkl8dq041t2m15e.apps.googleusercontent.com';
-      const REDIRECT_URI = 'https://auth.expo.io/@philipeacampos/bepharmabee';
+      const REDIRECT_URI = 'https://auth.expo.io/@philipeacampos/app';
       const RESPONSE_TYPE = 'token';
       const SCOPE = encodeURI('profile email');
 
       const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${SCOPE}`;
       
-      const { params, type} = await AuthSession
+      const { params, type } = await AuthSession
       .startAsync({ authUrl }) as AuthorizationResponse;
 
         if(type === 'success'){
@@ -61,7 +61,7 @@ function AuthProvider({ children }: AuthProviderProps) {
       
 
     } catch (error) {
-      throw new Error(`${error}`);
+        throw new Error(`${error}`);
     }
   }
 

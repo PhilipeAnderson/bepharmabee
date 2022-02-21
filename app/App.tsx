@@ -1,9 +1,11 @@
 import React from 'react';
+
 import { ThemeProvider } from 'styled-components';
-
 import theme from './src/global/styles/theme';
-import { Routes } from './src/routes';
 
+import { AppRoutes } from './src/routes/app.routes';
+
+import { Login } from './src/pages/Login';
 import { AuthProvider } from './src/hooks/auth';
 
 export default function App() {
@@ -11,7 +13,7 @@ export default function App() {
   return (
     <ThemeProvider theme={ theme }>
         <AuthProvider>
-          <Routes />
+          <Login />
         </AuthProvider>
     </ThemeProvider>
   );
