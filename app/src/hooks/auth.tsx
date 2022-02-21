@@ -1,5 +1,10 @@
 import React, { createContext, ReactNode, useContext, useState } from "react";
+
 import * as AuthSession from 'expo-auth-session';
+// import * as Google from 'expo-google-app-auth';
+import * as AppleAuthenctication from 'expo-apple-authentication';
+import { AppleAuthenticationScope } from "expo-apple-authentication";
+
 
 const { CLIENT_ID } = process.env;
 const { REDIRECT_URI } = process.env;
@@ -17,7 +22,7 @@ interface User {
 
 interface AuthContextData {
   user: User,
-  signInWithGoogle(): Promise<void> 
+  signInWithGoogle(): Promise<void>
 }
 
 interface AuthorizationResponse {
@@ -32,7 +37,6 @@ const AuthContext = createContext({} as AuthContextData);
 function AuthProvider({ children }: AuthProviderProps) {
 
   const [user, setUser] = useState<User>({} as User)
-
 
   async function signInWithGoogle() {
     try {
