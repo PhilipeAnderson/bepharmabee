@@ -1,9 +1,9 @@
 import React, { createContext, ReactNode, useContext, useState } from "react";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import * as AuthSession from 'expo-auth-session';
 // import * as Google from 'expo-google-app-auth';
-import * as AppleAuthenctication from 'expo-apple-authentication';
-import { AppleAuthenticationScope } from "expo-apple-authentication";
+
 
 
 const { CLIENT_ID } = process.env;
