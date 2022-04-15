@@ -7,6 +7,7 @@ import { AppRoutes } from './src/routes/app.routes';
 
 import { Login } from './src/pages/Login';
 import { Dashboard } from './src/pages/Dashboard';
+import { Product } from './src/pages/Product';
 
 import { AuthProvider } from './src/hooks/auth';
 
@@ -16,7 +17,8 @@ export default function App() {
     <ThemeProvider theme={ theme }>
         <AuthProvider>
           {/* <Login /> */}
-          <Dashboard />
+          {/* <Dashboard /> */}
+          <Product />
         </AuthProvider>
     </ThemeProvider>
   );

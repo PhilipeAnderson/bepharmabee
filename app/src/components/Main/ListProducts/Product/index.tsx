@@ -19,7 +19,7 @@ interface MedicineProps{
   description: string,
   pharmacy: string,
   price: string,
-  cents: string
+  cents: string,
 }
 
 export function Product({ 

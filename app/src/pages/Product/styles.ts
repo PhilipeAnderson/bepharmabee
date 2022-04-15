@@ -6,18 +6,18 @@ export const Container = styled.View`
   flex: 1;
 `;
 
-export const Header = styled.View`
+export const SelfHeader = styled.View`
   width: 100%;
   height: 70%;
   align-items: center;
   justify-content: flex-start;
-  background-color: ${({ theme }) => theme.colors.shape};
+  
   `;
 
 export const ImageProduct = styled.Image`
   width: ${RFPercentage(55)}px;
   height: ${RFValue(250)}px;
-  margin-top: ${RFValue(40)}px;
+  margin-top: ${RFValue(10)}px;
 `;
 
 export const InfoProduct = styled.View`
