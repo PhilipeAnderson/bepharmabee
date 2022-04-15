@@ -6,10 +6,11 @@ export const Container = styled.View`
   width: ${RFValue(316)}px;
   height: ${RFValue(40)}px;
   border-radius: 250px;
-  padding: 10px 20px;
+  padding: 2px 10px;
   background-color: ${({ theme }) => theme.colors.shape};
 `;
 
 export const Research = styled.TextInput`
   color: #474747;
+  font-size: 17px;
 `;
