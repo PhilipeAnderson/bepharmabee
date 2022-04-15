@@ -8,5 +8,6 @@ export const Container = styled.View`
 
 export const TitleList = styled.Text`
   font-size: ${RFValue(16)}px;
+  margin-left: ${RFValue(15)}px;
   color: ${({ theme }) => theme.colors.shape};
 `;
