@@ -26,7 +26,7 @@ export function Cards() {
         <HighLightCard
           title="DrogaRaia"
           type="ok"
-          image="https://www.providros.com.br/img_system/fachada-em-vidro-temperado-droga-raia-bela-vista-porto-alegre-pro-vidros-5.jpg"
+          image="https://guiadafarmacia.com.br/wp-content/uploads/2019/09/Droga-Raia-Externa-1-Cre%CC%81dito-Divulgac%CC%A7a%CC%83o.png"
         />
         <HighLightCard
           title="Drogamed"

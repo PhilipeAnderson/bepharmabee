@@ -50,8 +50,8 @@ export function ListProducts() {
         cents="99"
       />
       <Product 
-        image="https://ncmapp.com/imagens_ean/7896112110576.jpg"
-        name="Teuto"
+        image="https://uploads.consultaremedios.com.br/product_variation_images/full/5bd39c49ca09a5fcd159b3937df4729ea8b00b54.jpg?1543323528"
+        name="Paracetamol"
         description="Esse é o verdadeiro Mata Covid."
         pharmacy="Pague Menos"
         price="24"
