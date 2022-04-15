@@ -25,7 +25,7 @@ export const Header = styled.View`
   padding: 5px 25px;
   border-top-left-radius: 20px;
   z-index: 101;
-  background-color: ${({ theme }) => theme.colors.backgroundList};
+  background-color: ${({ theme }) => theme.colors.backgroundSoft};
 `;
 
 export const Title = styled.Text`
@@ -37,10 +37,10 @@ export const Icon = styled(Fontisto)<TypeProps>`
   font-size: ${RFValue(36)}px;
 
   ${({ type }) => type === 'ok' && css`
-    color: ${({ theme }) => theme.colors.success}
+    color: ${({ theme }) => theme.colors.motorcycleDelivery}
   `};
 
   ${({ type }) => type === 'nok' && css`
-    color: ${({ theme }) => theme.colors.error}
+    color: ${({ theme }) => theme.colors.motorcycleNoDelivery}
   `};
 `;

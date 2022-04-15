@@ -16,6 +16,10 @@ export default {
     
     backgroundDark: '#201F24',
     backgroundLight: '#F0F2F5',
-    backgroundList: '#474747'
+    backgroundList: '#474747',
+    backgroundSoft: 'rgba(0,0,0,0.3)',
+
+    motorcycleDelivery: '#32CD32',
+    motorcycleNoDelivery: '#FF6347'
   }
 }
