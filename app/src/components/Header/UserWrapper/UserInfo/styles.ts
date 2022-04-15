@@ -12,7 +12,7 @@ export const UserPhoto = styled.Image`
   height: ${RFValue(60)}px;
 `;
 
-export const UserData = styled.Text`
+export const UserData = styled.View`
   margin-left: 12px;
 `;
 
