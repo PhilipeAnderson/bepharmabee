@@ -42,8 +42,8 @@ export function Login() {
           <Logo source={require('../../assets/beeLogo.png')}/>
           <Title>
             A Farmácia{'\n'}
-            DENTRO do seu{'\n'}
-            <Span>Condomínio :)</Span> 
+            DENTRO da seu{'\n'}
+            <Span>Casa:)</Span> 
           </Title>
         </TitleWrapper>
 
