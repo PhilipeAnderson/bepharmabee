@@ -10,6 +10,7 @@ import { Login } from './src/pages/Login';
 import { Dashboard } from './src/pages/Dashboard';
 import { Product } from './src/pages/Product';
 import { Specials } from './src/pages/Specials';
+import { Vaccine } from './src/pages/Vaccine';
 
 import { AuthProvider } from './src/hooks/auth';
 
@@ -20,9 +21,10 @@ export default function App() {
         <AuthProvider>
           {/* <Splash /> */}
           {/* <Login /> */}
-          {/* <Dashboard /> */}
+          <Dashboard />
           {/* <Product /> */}
-          <Specials />
+          {/* <Specials /> */}
+          {/* <Vaccine /> */}
         </AuthProvider>
     </ThemeProvider>
   );

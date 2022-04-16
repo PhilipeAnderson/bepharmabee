@@ -7,9 +7,9 @@ import { useTheme } from 'styled-components';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 const { Navigator, Screen } = createBottomTabNavigator();
 
-import { Specials } from '../pages/Specials'
 import { Dashboard } from '../pages/Dashboard';
 import { Product } from '../pages/Product';
+import { Specials } from '../pages/Specials'
 
 
 export function AppRoutes() {
