@@ -11,8 +11,7 @@ export const SelfHeader = styled.View`
   height: 70%;
   align-items: center;
   justify-content: flex-start;
-  
-  `;
+`;
 
 export const ImageProduct = styled.Image`
   width: ${RFPercentage(55)}px;

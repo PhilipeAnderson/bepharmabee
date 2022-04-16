@@ -3,13 +3,13 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
-  background-color: ${({ theme }) => theme.colors.backgroundLight};
+  background-color: ${({ theme }) => theme.colors.shape};
 `;
 
-export const Header = styled.View`
+export const SelfHeader = styled.View`
   width: 100%;
   height: 20%;
-  background-color: ${({ theme }) => theme.colors.backgroundLight};
+  background-color: ${({ theme }) => theme.colors.primary};
 
   justify-content: center;
   align-items: center;
@@ -37,5 +37,18 @@ export const CategoryText = styled.Text`
 export const List = styled.View`
   width: 100%;
   height: 70%;
-  background-color: ${({ theme }) => theme.colors.backgroundList};
+  background-color: ${({ theme }) => theme.colors.backgroundDark};
+`;
+
+export const TextCallToAction = styled.Text`
+  text-align: center
+  margin-top: ${RFValue(20)}px;
+  font-size: ${RFValue(14)}px;
+  color: ${({ theme }) => theme.colors.primary}
+`;
+
+export const CallToAction = styled.Image`
+  width: ${RFValue(370)}px;
+  height: ${RFValue(400)}px;
+  margin-top: ${RFValue(20)}px;
 `;

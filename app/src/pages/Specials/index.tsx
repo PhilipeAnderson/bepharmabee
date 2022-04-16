@@ -1,27 +1,35 @@
 import React from 'react';
 
-import { 
+import {
   Container,
-  Header,
+  SelfHeader,
   Title,
   Category,
   CategoryText,
-  List
+  List,
+  TextCallToAction,
+  CallToAction
 } from './styles';
 
 
 export function Specials() {
-  return(
+  return (
     <Container>
-      <Header>
+      <SelfHeader>
         <Title>Escolha Uma Categoria Especial</Title>
         <Category>
           <CategoryText>Auditivo</CategoryText>
           <CategoryText>Visual</CategoryText>
+          <CategoryText>Fala</CategoryText>
           <CategoryText>Motor</CategoryText>
         </Category>
-      </Header>
-      <List />
+      </SelfHeader>
+      <List >
+        <TextCallToAction>
+          Escolha em uma das categorias os produtos que você precisa. Nossos Parceiros irão atendê-lo!
+        </TextCallToAction>
+        <CallToAction source={require('../../assets/inclusao.jpg')} />
+      </List>
     </Container>
   )
 };
