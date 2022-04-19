@@ -22,7 +22,9 @@ const db = [
         ],
         pharmacy: 'Nome Da Farmácia',
       }
-    ],
+    ]
+  },
+  {  
     pagueMenos: [
       {
         name: 'Nome Do Produto',
@@ -45,7 +47,9 @@ const db = [
         ],
         pharmacy: 'Nome Da Farmácia',
       }
-    ],
+    ]
+  },
+  {  
     nissei: [
       {
         name: 'Nome Do Produto',
@@ -68,7 +72,9 @@ const db = [
         ],
         pharmacy: 'Nome Da Farmácia',
       }
-    ],
+    ]
+  },
+  {
     drogaraia: [
       {
         name: 'Nome Do Produto',
@@ -91,7 +97,9 @@ const db = [
         ],
         pharmacy: 'Nome Da Farmácia',
       }
-    ],
+    ]
+  },
+  {
     drogamed: [
       {
         name: 'Nome Do Produto',
@@ -114,8 +122,8 @@ const db = [
         ],
         pharmacy: 'Nome Da Farmácia',
       }
-    ],
-
-
-}
+    ]
+  }
 ]
+
+module.exports = db;

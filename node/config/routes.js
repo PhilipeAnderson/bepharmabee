@@ -1,8 +1,16 @@
 const express = require('express');
 const routes = express();
-const db = require('../database/database');
 
-routes.get('/', (req, res) => {
+//API's
+const cards = require('../database/cards');
+const db = require('../database/oldApi');
+
+
+routes.get('/cards', (req, res) => {
+  return res.json(cards)
+})
+
+routes.get('/oldApi', (req, res) => {
   return res.json(db)
 });
 
