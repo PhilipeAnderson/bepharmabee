@@ -4,14 +4,14 @@ import {
   Container,
   BackImage,
   Header,
-  //Title,
+  Title,
   Icon
 } from './styles';
 
 interface CardsProps {
   title: string,
   image: string,
-  type: 'ok' | 'nok'
+  type: 'ok' | 'nok',
 }
 
 const icon = {
@@ -23,7 +23,7 @@ export function HighLightCard({ title, type, image } : CardsProps){
   return(
     <Container>
         <Header>
-          {/* <Title>{title}</Title> */}
+          <Title>{title}</Title>
           <Icon name={icon[type]} type={type} />
         </Header>
       <BackImage source={{uri: image }} />

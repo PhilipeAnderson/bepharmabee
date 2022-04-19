@@ -1,12 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { HighLightCard } from './HighLightCard';
 
 import {
   Container
 } from './styles';
 
+interface dataApiProps {
+  title: string,
+  type: string,
+  image: string
+}
+
 export function Cards() {
+
+  const [ dataApi, setDataApi ] = useState<dataApiProps>([])
+
+
+  
+
   return(
+
+    // <Container>
+    //   {dataApi.map(datas => {
+    //     return(
+    //       <HighLightCard
+    //         title={datas.title}
+    //         type={datas.type}
+    //         image={datas.image}
+    //       />
+    //     )
+    //   })}
+    // </Container>
+
     <Container>
       <HighLightCard
           title="Panvel" 
@@ -34,5 +59,6 @@ export function Cards() {
           image="http://www.costaricanews.com.br/wp-content/uploads/2017/09/CAPA.jpg"
         />
     </Container>
+
   )
 };
