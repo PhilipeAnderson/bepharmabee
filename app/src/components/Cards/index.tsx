@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { HighLightCard } from './HighLightCard';
 
+import { cardsApi } from '../../services/centralApis';
+
 import {
   Container
 } from './styles';
@@ -13,13 +15,19 @@ interface dataApiProps {
 
 export function Cards() {
 
-  const [ dataApi, setDataApi ] = useState<dataApiProps>([])
+  const [ dataApi, setDataApi ] = useState<dataApiProps>()
 
-
-  
+  useEffect(() => {
+    setTimeout(() => {
+      cardsApi.get('http://localhost:3333/cards')
+        .then(response => {
+          setDataApi(response.data)
+          console.log(dataApi)
+        })
+    }, 1000)
+  })
 
   return(
-
     // <Container>
     //   {dataApi.map(datas => {
     //     return(
@@ -59,6 +67,5 @@ export function Cards() {
           image="http://www.costaricanews.com.br/wp-content/uploads/2017/09/CAPA.jpg"
         />
     </Container>
-
   )
 };
