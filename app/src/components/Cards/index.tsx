@@ -1,45 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { HighLightCard } from './HighLightCard';
-
-import { cardsApi } from '../../services/centralApis';
 
 import {
   Container
 } from './styles';
 
-interface dataApiProps {
-  title: string,
-  type: string,
-  image: string
-}
 
 export function Cards() {
 
-  const [ dataApi, setDataApi ] = useState<dataApiProps>()
-
-  useEffect(() => {
-    setTimeout(() => {
-      cardsApi.get('http://localhost:3333/cards')
-        .then(response => {
-          setDataApi(response.data)
-          console.log(dataApi)
-        })
-    }, 1000)
-  })
-
   return(
-    // <Container>
-    //   {dataApi.map(datas => {
-    //     return(
-    //       <HighLightCard
-    //         title={datas.title}
-    //         type={datas.type}
-    //         image={datas.image}
-    //       />
-    //     )
-    //   })}
-    // </Container>
-
+    
     <Container>
       <HighLightCard
           title="Panvel" 
