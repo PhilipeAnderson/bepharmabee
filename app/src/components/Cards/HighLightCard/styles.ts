@@ -30,7 +30,7 @@ export const Header = styled.View`
 
 export const Title = styled.Text`
   font-size: ${RFValue(24)}px;
-  color: '#FFFFFF';
+  color: ${({ theme }) => theme.colors.shape};
   margin-right: 20px;
 `;
 

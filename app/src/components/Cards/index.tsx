@@ -1,15 +1,46 @@
 import React from 'react';
 import { HighLightCard } from './HighLightCard';
 
-import {
-  Container
-} from './styles';
+import { Container } from './styles';
 
+// interface DataCardsProps {
+//   title: string,
+//   type: string,
+//   image: string
+// }
 
 export function Cards() {
 
+  // const [ dataCards, setDataCards ] = useState([])
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     fetch('http://localhost:3333/cards', {
+  //       method: 'GET',
+  //       headers: {
+  //         'Content-Type': 'application/json'
+  //       }
+  //     })
+  //       .then(response => response.json())
+  //       .then(data => setDataCards(data))
+  //       .catch(err => console.log(err))
+  //   }, 1000)
+  // }, [])
+
+  // console.log(dataCards)
+
   return(
-    
+    // <Container>
+    //   {dataCards.map(eachCard => {
+    //     return(
+    //       <HighLightCard
+    //         title={eachCard.title}
+    //         type={eachCard.type}
+    //         image={eachCard.image}
+    //       />
+    //     )
+    //   })}
+    // </Container>
     <Container>
       <HighLightCard
           title="Panvel" 
