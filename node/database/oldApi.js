@@ -1,4 +1,4 @@
-const db = [
+const oldApi = [
   {
     panvel: [
       {
@@ -126,4 +126,4 @@ const db = [
   }
 ]
 
-module.exports = db;
+module.exports = oldApi;
