@@ -11,7 +11,8 @@ import {
 interface CardsProps {
   title: string,
   image: string,
-  type: 'ok' | 'nok',
+  type:string
+  //type: 'ok' | 'nok',
 }
 
 const icon = {
@@ -24,7 +25,7 @@ export function HighLightCard({ title, type, image } : CardsProps){
     <Container>
         <Header>
           <Title>{title}</Title>
-          <Icon name={icon[type]} type={type} />
+          {/* <Icon name={icon[type]} type={type} /> */}
         </Header>
       <BackImage source={{uri: image }} />
     </Container>
