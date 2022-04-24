@@ -14,5 +14,5 @@ export const Title = styled.Text`
 `;
 
 export const Name = styled.Text`
-  color: #000;
+  color: #fff;
 `;

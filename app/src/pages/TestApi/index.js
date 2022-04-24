@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import {
   Container,
+  Name,
   Title,
-  Name
+  //Name
 } from './styles';
 
  
@@ -10,7 +11,7 @@ import { db } from './peopleData';
 
 export function TesteApi() {
 
-  const [ dataPeople, setDataPeople ] = useState({})
+  const [ dataPeople, setDataPeople ] = useState([])
 
   useEffect(() => {
     setTimeout(() => {
@@ -18,14 +19,17 @@ export function TesteApi() {
     }, 1000)
   }, [])
 
-  console.log(dataPeople)
+  //console.log(dataPeople)
+  //console.log(db)
 
+  
 return(
   <Container>
       <Title>Teste API</Title>
-      {dataPeople.map(item => (
-        <Name>{item.name}</Name>
-        ))}
+      <Name>
+        { dataPeople.map(item => item.name) }
+      </Name>
+      
 
     </Container>
   )

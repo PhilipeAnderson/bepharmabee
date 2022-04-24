@@ -22,12 +22,12 @@ export default function App() {
         <AuthProvider>
           {/* <Splash /> */}
           {/* <Login /> */}
-          {/* <Dashboard /> */}
+          <Dashboard />
           {/* <Product /> */}
           {/* <Specials /> */}
           {/* <Vaccine /> */}
 
-          <TesteApi />
+          {/* <TesteApi /> */}
         </AuthProvider>
     </ThemeProvider>
   );
