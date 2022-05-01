@@ -21,8 +21,8 @@ export default function App() {
     <ThemeProvider theme={ theme }>
         <AuthProvider>
           {/* <Splash /> */}
-          {/* <Login /> */}
-          <Dashboard />
+          <Login />
+          {/* <Dashboard /> */}
           {/* <Product /> */}
           {/* <Specials /> */}
           {/* <Vaccine /> */}
